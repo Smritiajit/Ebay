@@ -1,0 +1,60 @@
+package cucumber.page;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class GooglePage extends DriverInt {
+	
+	public void launchBrowser() {
+		System.setProperty("webdriver.chrome.driver", "E://New folder//Downloads//chromedriver.exe");
+		driver = new ChromeDriver();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().window().maximize();
+	}
+	
+	public void openURL() {
+		driver.get("http://www.google.com");
+	}
+		
+	public void search(String arg1) {
+		String searchStr = arg1;
+		if(driver.findElement(By.name("q")).isDisplayed()) {
+			driver.findElement(By.name("q")).sendKeys(searchStr);
+			driver.findElement(By.name("btnK")).click();
+		} else {
+			System.out.println("Searchbox not displayed");
+		}
+	}
+	
+	public void gumtreeLinks() throws InterruptedException
+	{
+		List<WebElement> linkElements = driver.findElements(By.xpath("//h3[@class='r']/a"));
+		int noOfGumtree = 0;
+		List<String> gumTreeLink = new ArrayList<String>();
+		for (WebElement element : linkElements)
+			 
+		  {
+	 
+			  if(element.getText().contains("gumtree"))
+			  {
+				  noOfGumtree++; 
+				  gumTreeLink.add(((WebElement) linkElements).getText());
+	            
+	            /*driver.findElement(By.linkText(text)).click();
+	            Thread.sleep(2000L);
+	            System.out.println("Title of link\t:\t" + driver.getTitle());
+	            Thread.sleep(2000L);
+	            driver.navigate().back();
+	            linkElements = driver.findElements(By.xpath("//h3[@class='r']/a"));*/
+
+	        } 
+	}
+	
+	}
+
+}

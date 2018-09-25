@@ -1,0 +1,5 @@
+package cucumber.page;
+
+public class GumTreePage {
+
+}

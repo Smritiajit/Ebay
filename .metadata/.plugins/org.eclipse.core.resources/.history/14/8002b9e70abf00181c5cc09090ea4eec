@@ -1,0 +1,23 @@
+package cucumber.page;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+
+public class GumTreePage extends DriverInt{
+	
+	public void clickGumtree(List list ) throws InterruptedException
+	{
+		
+		for (String element : list)
+		{
+		driver.findElement(By.linkText(element)).click();
+		Thread.sleep(2000L);
+		gumTreeTitle.add(driver.getTitle());
+        System.out.println("Title of link\t:\t" + driver.getTitle());
+        Thread.sleep(2000L);
+        driver.navigate().back();
+		}
+	}
+
+}

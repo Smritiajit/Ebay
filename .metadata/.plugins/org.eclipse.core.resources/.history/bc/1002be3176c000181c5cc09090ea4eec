@@ -1,0 +1,22 @@
+package cucumber.page;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class link {
+	
+	public static WebDriver driver;
+	public static void main ()
+	{
+	System.setProperty("webdriver.chrome.driver", "E://New folder//Downloads//chromedriver.exe");
+	driver = new ChromeDriver();
+	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	driver.manage().window().maximize();
+	driver.get("https://www.gumtree.com/cars/london");
+	String title =driver.getTitle();
+	System.out.println(title);
+	}
+
+}

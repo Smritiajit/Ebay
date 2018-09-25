@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TaskOne" project="Ebay" tests="15" started="15" failures="0" errors="4" ignored="4">
+  <testsuite name="cucumber.runner.TaskOne" time="98.41">
+    <testsuite name="Feature: Gumtree Web Testing" time="98.41">
+      <testsuite name="Scenario: User wants to search." time="0.001">
+        <testcase name="Given user wants to search &quot;Cars in london&quot; on Google" classname="Scenario: User wants to search." time="0.001"/>
+        <testcase name="When user access the page" classname="Scenario: User wants to search." time="0.0"/>
+        <testcase name="Then user can see Gumtree link" classname="Scenario: User wants to search." time="0.0"/>
+      </testsuite>
+      <testsuite name="Scenario: User wants to check no of Gumtree links on 1st page." time="0.002">
+        <testcase name="Given user wants to search &quot;Cars in london&quot; on Google" classname="Scenario: User wants to check no of Gumtree links on 1st page." time="0.0"/>
+        <testcase name="When user access the page" classname="Scenario: User wants to check no of Gumtree links on 1st page." time="0.001"/>
+        <testcase name="Then check number of Gumtree links on the page." classname="Scenario: User wants to check no of Gumtree links on 1st page." time="0.001"/>
+      </testsuite>
+      <testsuite name="Scenario: Validate Title displayed" time="0.031" incomplete="true">
+        <error>org.openqa.selenium.WebDriverException: unknown error: Element &lt;input value="Google Search" aria-label="Google Search" name="btnK" type="submit" jsaction="sf.chk"&gt; is not clickable at point (435, 411). Other element would receive the click: &lt;div class="sbqs_c"&gt;...&lt;/div&gt;
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:05:20.749Z'
+System info: host: 'USER-PC', ip: '169.254.175.159', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_144'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591088 (7b2b2dca23cca0..., userDataDir: C:\Users\User\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:58120}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}
+Session ID: 1984de47385a5b8080ea9a3d45d1379a&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)&#13;
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)&#13;
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)&#13;
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)&#13;
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)&#13;
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)&#13;
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)&#13;
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)&#13;
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)&#13;
+	at cucumber.page.GooglePage.search(GooglePage.java:21)&#13;
+	at cucumber.step.TaskOneStep.user_wants_to_search_on_Google(TaskOneStep.java:15)&#13;
+	at ✽.Given user wants to search "Cars in london" on Google(TaskOne.feature:20)&#13;
+&#13;
+</error>
+        <testcase name="Given user wants to search &quot;Cars in london&quot; on Google" classname="Scenario: Validate Title displayed" time="0.03">
+          <error>org.openqa.selenium.WebDriverException: unknown error: Element &lt;input value="Google Search" aria-label="Google Search" name="btnK" type="submit" jsaction="sf.chk"&gt; is not clickable at point (435, 411). Other element would receive the click: &lt;div class="sbqs_c"&gt;...&lt;/div&gt;
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:05:20.749Z'
+System info: host: 'USER-PC', ip: '169.254.175.159', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_144'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591088 (7b2b2dca23cca0..., userDataDir: C:\Users\User\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:58120}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}
+Session ID: 1984de47385a5b8080ea9a3d45d1379a&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)&#13;
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)&#13;
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)&#13;
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)&#13;
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)&#13;
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)&#13;
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)&#13;
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)&#13;
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)&#13;
+	at cucumber.page.GooglePage.search(GooglePage.java:21)&#13;
+	at cucumber.step.TaskOneStep.user_wants_to_search_on_Google(TaskOneStep.java:15)&#13;
+	at ✽.Given user wants to search "Cars in london" on Google(TaskOne.feature:20)&#13;
+&#13;
+</error>
+        </testcase>
+        <testcase name="When user clicks on Gumtree links" classname="Scenario: Validate Title displayed" time="0.001" ignored="true"/>
+        <testcase name="Then check title displayed in each link." classname="Scenario: Validate Title displayed" time="0.0" ignored="true"/>
+      </testsuite>
+      <testsuite name="Scenario: Validate No of Car displayed &gt; 0" time="0.003">
+        <testcase name="Given user wants to search &quot;Cars in london&quot; on Google" classname="Scenario: Validate No of Car displayed &gt; 0" time="0.001"/>
+        <testcase name="When user clicks on Gumtree links" classname="Scenario: Validate No of Car displayed &gt; 0" time="0.001"/>
+        <testcase name="Then validate No of Car displayed as result &gt; 0." classname="Scenario: Validate No of Car displayed &gt; 0" time="0.001"/>
+      </testsuite>
+      <testsuite name="Scenario: If no Gumtree link present on 1st page." time="0.001" incomplete="true">
+        <error>org.openqa.selenium.WebDriverException: unknown error: Element &lt;input value="Google Search" aria-label="Google Search" name="btnK" type="submit" jsaction="sf.chk"&gt; is not clickable at point (435, 411). Other element would receive the click: &lt;div class="sbqs_c"&gt;...&lt;/div&gt;
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:05:20.749Z'
+System info: host: 'USER-PC', ip: '169.254.175.159', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_144'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591088 (7b2b2dca23cca0..., userDataDir: C:\Users\User\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:58218}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}
+Session ID: 8b68d992ae9e2fc714dc2e8701aa7295&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)&#13;
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)&#13;
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)&#13;
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)&#13;
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)&#13;
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)&#13;
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)&#13;
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)&#13;
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)&#13;
+	at cucumber.page.GooglePage.search(GooglePage.java:21)&#13;
+	at cucumber.step.TaskOneStep.user_wants_to_search_on_Google(TaskOneStep.java:15)&#13;
+	at ✽.Given user wants to search "Cars in london" on Google(TaskOne.feature:32)&#13;
+&#13;
+</error>
+        <testcase name="Given user wants to search &quot;Cars in london&quot; on Google" classname="Scenario: If no Gumtree link present on 1st page." time="0.001">
+          <error>org.openqa.selenium.WebDriverException: unknown error: Element &lt;input value="Google Search" aria-label="Google Search" name="btnK" type="submit" jsaction="sf.chk"&gt; is not clickable at point (435, 411). Other element would receive the click: &lt;div class="sbqs_c"&gt;...&lt;/div&gt;
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:05:20.749Z'
+System info: host: 'USER-PC', ip: '169.254.175.159', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_144'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591088 (7b2b2dca23cca0..., userDataDir: C:\Users\User\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:58218}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}
+Session ID: 8b68d992ae9e2fc714dc2e8701aa7295&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)&#13;
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)&#13;
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)&#13;
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)&#13;
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)&#13;
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)&#13;
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)&#13;
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)&#13;
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)&#13;
+	at cucumber.page.GooglePage.search(GooglePage.java:21)&#13;
+	at cucumber.step.TaskOneStep.user_wants_to_search_on_Google(TaskOneStep.java:15)&#13;
+	at ✽.Given user wants to search "Cars in london" on Google(TaskOne.feature:32)&#13;
+&#13;
+</error>
+        </testcase>
+        <testcase name="When user access the page" classname="Scenario: If no Gumtree link present on 1st page." time="0.0" ignored="true"/>
+        <testcase name="Then no Gumtree link is displayed." classname="Scenario: If no Gumtree link present on 1st page." time="0.258" ignored="true"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

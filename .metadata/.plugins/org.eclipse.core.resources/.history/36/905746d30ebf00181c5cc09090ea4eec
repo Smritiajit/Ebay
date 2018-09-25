@@ -1,0 +1,56 @@
+package cucumber.page;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.openqa.selenium.By;
+
+public class GumTreePage extends DriverInt{
+	List<String> gumTreeList = new ArrayList<String>();
+	List<String> gumTreeTitle = new ArrayList<String>();
+	
+	public void clickGumtree(List list ) throws InterruptedException
+	{
+		gumTreeList.addAll(list);
+		
+		for (String element : gumTreeList)
+		{
+		driver.findElement(By.linkText(element)).click();
+		Thread.sleep(2000L);
+		gumTreeTitle.add(driver.getTitle());
+        System.out.println("Title of link :" + driver.getTitle());
+        Thread.sleep(2000L);
+        driver.navigate().back();
+		}
+	}
+	
+	public boolean checkTitle()
+	{
+		int flag = 0;
+		for (String element : gumTreeTitle)
+		{
+			if(!gumTreeTitle.isEmpty())
+			{
+				if(gumTreeTitle.contains("gumTree") || gumTreeTitle.contains("gumtree"))
+				{
+					flag++;
+				}
+				else 
+				{
+					
+				}
+				
+			}
+			
+		}
+		if(flag == gumTreeTitle.size())
+		{
+		return true;
+		}
+		else
+			return false;
+	}
+	
+	
+
+}

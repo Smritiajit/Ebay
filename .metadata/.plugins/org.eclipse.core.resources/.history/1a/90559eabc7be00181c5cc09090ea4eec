@@ -1,0 +1,59 @@
+package cucumber.step;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class TaskOneStep {
+	@Given("^user wants to search \"([^\"]*)\" on Google$")
+	public void user_wants_to_search_on_Google(String arg1) throws Throwable {
+
+
+	    
+	}
+
+	@When("^user access the page$")
+	public void user_access_the_page() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+	   
+	}
+
+	@Then("^user can see Gumtree link$")
+	public void user_can_see_Gumtree_link() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+	    
+	}
+
+	@Then("^check number of Gumtree links on the page\\.$")
+	public void check_number_of_Gumtree_links_on_the_page() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+	    
+	}
+
+	@When("^user clicks on Gumtree links$")
+	public void user_clicks_on_Gumtree_links() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+	    
+	}
+
+	@Then("^check title displayed in each link\\.$")
+	public void check_title_displayed_in_each_link() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+	   
+	}
+
+	@Then("^validate No of Car displayed as result > (\\d+)\\.$")
+	public void validate_No_of_Car_displayed_as_result(int arg1) throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+	    
+	}
+
+	@Then("^no Gumtree link is displayed\\.$")
+	public void no_Gumtree_link_is_displayed() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+	   
+	}
+
+
+
+}

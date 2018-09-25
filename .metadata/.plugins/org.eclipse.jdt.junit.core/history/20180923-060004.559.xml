@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TaskOne" project="Ebay" tests="1" started="1" failures="0" errors="1" ignored="0">
+  <testsuite name="cucumber.runner.TaskOne" time="0.002">
+    <testcase name="initializationError" classname="cucumber.runner.TaskOne" time="0.002">
+      <error>java.lang.NoClassDefFoundError: org/xmlpull/v1/XmlPullParser&#13;
+	at java.lang.Class.getDeclaredMethods0(Native Method)&#13;
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)&#13;
+	at java.lang.Class.privateGetPublicMethods(Class.java:2902)&#13;
+	at java.lang.Class.getMethods(Class.java:1615)&#13;
+	at cucumber.runtime.java.MethodScanner.scan(MethodScanner.java:40)&#13;
+	at cucumber.runtime.java.JavaBackend.loadGlue(JavaBackend.java:86)&#13;
+	at cucumber.runtime.Runtime.&lt;init&gt;(Runtime.java:94)&#13;
+	at cucumber.runtime.Runtime.&lt;init&gt;(Runtime.java:72)&#13;
+	at cucumber.runtime.Runtime.&lt;init&gt;(Runtime.java:68)&#13;
+	at cucumber.api.junit.Cucumber.createRuntime(Cucumber.java:78)&#13;
+	at cucumber.api.junit.Cucumber.&lt;init&gt;(Cucumber.java:58)&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)&#13;
+	at org.junit.internal.builders.AnnotatedBuilder.buildRunner(AnnotatedBuilder.java:104)&#13;
+	at org.junit.internal.builders.AnnotatedBuilder.runnerForClass(AnnotatedBuilder.java:86)&#13;
+	at org.junit.runners.model.RunnerBuilder.safeRunnerForClass(RunnerBuilder.java:59)&#13;
+	at org.junit.internal.builders.AllDefaultPossibilitiesBuilder.runnerForClass(AllDefaultPossibilitiesBuilder.java:26)&#13;
+	at org.junit.runners.model.RunnerBuilder.safeRunnerForClass(RunnerBuilder.java:59)&#13;
+	at org.junit.internal.requests.ClassRequest.getRunner(ClassRequest.java:33)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestLoader.createUnfilteredTest(JUnit4TestLoader.java:87)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestLoader.createTest(JUnit4TestLoader.java:73)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestLoader.loadTests(JUnit4TestLoader.java:46)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:522)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)&#13;
+Caused by: java.lang.ClassNotFoundException: org.xmlpull.v1.XmlPullParser&#13;
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)&#13;
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)&#13;
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:335)&#13;
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)&#13;
+	... 28 more&#13;
+&#13;
+</error>
+    </testcase>
+  </testsuite>
+</testrun>

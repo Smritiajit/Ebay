@@ -1,0 +1,24 @@
+package automationFramework;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class FirstClass {
+	
+	public static void main(String[] args) throws InterruptedException
+	{
+		String exePath = "E:\\New folder\\Downloads\\chromedriver.exe";
+		System.setProperty("webdriver.chrome.driver", exePath);
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://www.google.com");
+		driver.wait(3000);
+		WebElement search_textbox = driver.findElement(By.xpath(".//*[@id='gs_htif0']"));
+		 
+		search_textbox.sendKeys("Selenium Automation");
+		driver.findElement(By.xpath(".//*[@id='sblsbb']/button")).click();
+	}
+
+}

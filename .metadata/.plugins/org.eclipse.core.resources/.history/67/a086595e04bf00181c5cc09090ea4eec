@@ -1,0 +1,52 @@
+package cucumber.page;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+
+import cucumber.api.java.After;
+import cucumber.api.java.Before;
+
+public class DriverInt {
+	
+
+public static WebDriver driver;
+
+	
+/*	@Before (order= 0)
+	public WebDriver driverLaunch()
+	{
+		System.setProperty("webdriver.chrome.driver", "E://New folder//Downloads//chromedriver.exe");
+		ChromeOptions chromeOption = new ChromeOptions();
+		chromeOption.addArguments("--start-maximized");
+		WebDriver driver = new ChromeDriver(chromeOption);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		return driver;
+	}
+	
+	@Before (order= 1)
+	public void testing()
+	{
+		System.out.println("*****************Testing Starts*******************");
+	}
+	
+	@After (order= 1)
+	public void testingEnd()
+	{
+		System.out.println("*******************Testing Ends********************");
+	}
+	
+	@After (order= 0)
+	public void testingClose()
+	{
+		//driver.quit();
+	}
+	
+	public void getDriver()
+	{
+		
+	}
+*/
+}

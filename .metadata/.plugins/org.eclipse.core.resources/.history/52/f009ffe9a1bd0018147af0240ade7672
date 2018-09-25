@@ -1,0 +1,20 @@
+package automationFramework;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class FirstClass {
+	
+	public static void main(String[] args)
+	{
+		String exePath = "E:\\New folder\\Downloads\\chromedriver.exe";
+		System.setProperty("webdriver.chrome.driver", exePath);
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://www.google.com");
+		driver.findElement(By.id("gs_htif0")).sendKeys("cars in London");
+		driver.findElement(By.xpath(".//*[@id='sblsbb']/button")).click();
+	}
+
+}

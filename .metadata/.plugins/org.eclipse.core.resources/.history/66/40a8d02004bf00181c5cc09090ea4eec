@@ -1,0 +1,29 @@
+package cucumber.page;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class GooglePage extends DriverInt {
+	
+	public void launchBrowser() {
+		System.setProperty("webdriver.chrome.driver", "E://New folder//Downloads//chromedriver.exe");
+		driver = new ChromeDriver();
+	}
+	
+	public void openURL() {
+		driver.get("http://www.google.com");
+	}
+		
+	public void search(String arg1) {
+		String searchStr = arg1;
+		if(driver.findElement(By.name("q")).isDisplayed()) {
+			driver.findElement(By.name("q")).sendKeys(searchStr);
+			driver.findElement(By.name("btnK")).click();
+		} else {
+			System.out.println("Searchbox not displayed");
+		}
+	}
+	
+	
+
+}

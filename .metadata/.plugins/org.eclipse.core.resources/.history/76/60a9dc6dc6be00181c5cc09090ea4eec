@@ -1,0 +1,32 @@
+package cucumber.page;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class GooglePage extends DriverInt {
+	
+	public void launchBrowser() {
+		driver = new ChromeDriver();
+	}
+	
+	public void openURL() {
+		driver.get("http://www.google.com");
+	}
+		
+	public void search() {
+		if(driver.findElement(By.name("q")).isDisplayed()) {
+			driver.findElement(By.name("q")).sendKeys("Cars in London");
+		} else {
+			System.out.println("Searchbox not displayed");
+		}
+	}
+	
+	public void checkGoogleSearchButtonIsDisplayed() {
+		if(driver.findElement(By.name("btnK")).isDisplayed()) {
+			System.out.println("Google Search button is displayed");
+		} else {
+			System.out.println("Google Search button is NOT displayed");
+		}
+	}
+
+}
